@@ -3,8 +3,8 @@
 :root {
     --color-background: #f5f5f5;
     --color-background-form: #252525;
-    --color-primary: #4a90e2;
-    --color-primary-light: #6ba5e6;
+    --color-primary: #00b7ff;
+    --color-primary-dark: #0080ff;
     --color-wrapper: #0a0a0a;
     --color-text-1: #fff;
     --color-text-2: #333333;
@@ -77,7 +77,7 @@ button, #download {
 }
 
 button:hover, #download:hover {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-dark);
 }
 
 .result {
