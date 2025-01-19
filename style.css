@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-background: #f5f5f5;
+    --color-background-form: #252525;
+    --color-primary: #4a90e2;
+    --color-primary-light: #6ba5e6;
+    --color-wrapper: #0a0a0a;
+    --color-text-1: #fff;
+    --color-text-2: #333333;
+
+    --radius-1: 1.85rem;
+
+    --transition: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-primary);
+    color: var(--color-text-1);
+}
+
+.wrapper {
+    background-color: var(--color-wrapper);
+    padding: 1.25rem;
+    border-radius: var(--radius-1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 30rem;
+    max-width: 30rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: var(--color-background-form);
+    border-radius: var(--radius-1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input, button, #download {
+    padding: 1rem;
+    outline: none;
+    border-radius: var(--radius-1);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text-1);
+    margin-top: 0.6rem;
+}
+
+button, #download {
+    background-color: var(--color-primary);
+    color: var(--color-text-1);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover, #download:hover {
+    background-color: var(--color-primary-light);
+}
+
+.result {
+    display: none;
+    margin-top: 0.6rem;
+    width: 100%;
+    height: auto;    
+}
+
+.result.active {
+    display: flex;
+}
+
+canvas {
+    background-color: var(--color-background);
+    margin-top: 0.6rem;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-1);
+}
+
+#download {
+    display: none;
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    width: 100%;
+}
