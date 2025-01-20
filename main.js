@@ -16,6 +16,7 @@ generateButton.addEventListener('click', ()=> {
 
            const imageDataURL = qrCodeCanvas.toDataURL('image/png');
            downloadLink.href= imageDataURL;
+           downloadLink.download = "qrcode.png";
            downloadLink.style.display='inline';
 
         })
