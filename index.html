@@ -7,7 +7,8 @@
     <title>QR Codes</title>
     <link rel="icon" href="images/qrcoderegular.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js" defer></script>
 </head>
 
 <body>
@@ -15,12 +16,12 @@
         <h1>Générateur de QR Codes</h1>
 
         <div class="form">
-            <input type="text" placeholder="Entrez un texte ou un lien">
-            <button>Générer</button>
+            <input type="text" id="generalInput" placeholder="Entrez un texte ou un lien">
+            <button id="generate">Générer</button>
         </div>
 
-        <div class="result">
-            <canvas></canvas>
+        <div class="result" id="result">
+            <canvas id="qrCode"></canvas>
             <a href="" id="download">Télécharger le QR Code</a>
         </div>
     </div>
