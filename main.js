@@ -7,7 +7,7 @@ const downloadLink = document.querySelector('#download');
 generateButton.addEventListener('click', ()=> {
     const inputValue = inputElement.value.trim();
     if(inputValue) {
-        QRCode.toCanvas(qrCodeCanvas, inputValue, {with:400}, (error) => {
+        QRCode.toCanvas(qrCodeCanvas, inputValue, {width:400}, (error) => {
            if(error) {
             console.error(error)
             return
